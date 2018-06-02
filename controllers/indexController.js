@@ -14,4 +14,15 @@ exports.about = (req,res,next) =>{
         title:'About'
     });
 };
+exports.contact = (req,res,next) =>{
+    res.render('contact',{
+        title:'Contact Me'
+    });
+};
+exports.sent = (req,res,next) =>{
+    res.render('sent',{
+        title:'Email Confirmed'
+    });
+};
+
 

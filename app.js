@@ -3,7 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+const nodemailer= require('nodemailer');
+const bodyParser= require('body-parser');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -22,6 +23,9 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+//body parser middleware
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -38,5 +42,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;
