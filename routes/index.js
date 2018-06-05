@@ -11,7 +11,8 @@ router.get('/projects',indexController.projects);
 router.get('/about',indexController.about);
 router.get('/contact',indexController.contact);
 router.post('/send',(req,res)=>{
-  const output = `<p>You have a new message"</p>
+  //Gets the information from the contact form and inserts it into an email
+  const output = `<p>You have a new message</p>
                   <h3>Contact Details</h3>
                   <ul>
                     <li>Name: ${req.body.name}</li>
@@ -25,11 +26,11 @@ router.post('/send',(req,res)=>{
     let transporter = nodemailer.createTransport({
                     host: 'smtp.gmail.com',
                     port: 587,
-                    secure: false, //Gmail uses SSL 
+                    secure: false,  
                     service:'gmail',
                     auth: {
                         user: 'chastainrgm@gmail.com', 
-                        pass: 'hususeyrzagvizjr' // PLEASE DONT STEAL MY EMAIL ACCOUNT ALBY
+                        pass: 'hususeyrzagvizjr' 
                     }
                 });
             
@@ -38,9 +39,9 @@ router.post('/send',(req,res)=>{
                     from: '"Portfolio Site" <chastainrgm@gmail.com>', 
                     to: 'chastainrgm@gmail.com', 
                     subject: 'Message from your portfolio site',  
-                    html: output // inserts the contact infro and message into the email
+                    html: output // inserts the contact info and message into the email
                 };
-            
+  //         
   transporter.sendMail(mailOptions, (error, info) => {
                     if (error) {
                         return console.log(error);

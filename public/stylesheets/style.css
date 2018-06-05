@@ -1,6 +1,3 @@
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
 a {
   color: #00B7FF;
@@ -13,11 +10,17 @@ a {
 }
 
 p{
-  margin-left:50px;
+  background-color:white;
+  border-radius:2px;
+  font-size:20px;
+  padding:5px;
+  position:float;
 }
 
 h1,h2,h3,h4{
-  padding:10px;
+  padding:5px;
+  background-color:#c9e6ff;
+  border-radius:2px;
 }
 #splashscreen{
   position:absolute;
@@ -31,6 +34,10 @@ h1,h2,h3,h4{
   text-align: center;
   font-size:12em;
   color:whitesmoke;
+}
+
+#aboutpic{
+  float: left;
 }
 *{
   box-sizing: border-box;
@@ -137,4 +144,12 @@ ul{
   .company-info h3, .company-info ul, .brand{
     text-align: left;
   }
+}
+#projects{
+  background:#c9e6ff;
+  border-radius: 5px;
+}
+#projects-title{
+  background:white;
+  margin-top:-15px;
 }
