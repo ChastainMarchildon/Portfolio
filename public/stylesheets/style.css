@@ -28,7 +28,9 @@ h1,h2,h3,h4{
   left:0;
   bottom:0;
   width:100%;
-  background-color:slategray;
+  background-image: url("/images/background.jpg");
+  font-size:12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 #welcome{
   text-align: center;
