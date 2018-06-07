@@ -8,6 +8,10 @@ a {
   background-color:slategray;
 
 }
+.canvas-dv{
+  height: 100%;
+  width:100%;
+}
 
 p{
   background-color:white;
@@ -18,9 +22,10 @@ p{
 }
 
 h1,h2,h3,h4{
-  padding:5px;
-  background-color:#c9e6ff;
+  padding:15px;
+  background-color:#727d88;
   border-radius:2px;
+  color:white;
 }
 #splashscreen{
   position:absolute;
@@ -28,6 +33,8 @@ h1,h2,h3,h4{
   left:0;
   bottom:0;
   width:100%;
+  height:100%;
+  z-index: 9999;
   background-image: url("/images/background.jpg");
   font-size:12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -36,6 +43,13 @@ h1,h2,h3,h4{
   text-align: center;
   font-size:12em;
   color:whitesmoke;
+  margin-top:20%;
+}
+#particles-js canvas{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:-1;
 }
 
 #aboutpic{
@@ -46,7 +60,7 @@ h1,h2,h3,h4{
 }
 
 body{
-  background:#92bde7;
+  background:#434444;
   color:#485e74;
   line-height:1.6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,7 +96,8 @@ ul{
 }
 
 .company-info{
-  background:#c9e6ff;
+  background:#727d88;
+  color:white;
 }
 
 .company-info h3, .company-info ul{
@@ -120,7 +135,7 @@ ul{
 }
 
 .contact form button{
-  background:#c9e6ff;
+  background:#727d88;
   border:0;
   text-transform: uppercase;
 }
@@ -148,10 +163,11 @@ ul{
   }
 }
 #projects{
-  background:#c9e6ff;
+  background:#727d88;
   border-radius: 5px;
+  color:white;
 }
 #projects-title{
-  background:white;
   margin-top:-15px;
+  background: none;
 }

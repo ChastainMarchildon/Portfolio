@@ -11,7 +11,8 @@ exports.projects = (req,res,next) =>{
 };
 exports.about = (req,res,next) =>{
     res.render('about',{
-        title:'About'
+        title:'About',
+        
     });
 };
 exports.contact = (req,res,next) =>{
