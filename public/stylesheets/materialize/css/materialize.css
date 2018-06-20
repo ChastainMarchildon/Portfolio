@@ -2865,18 +2865,20 @@ ul.staggered-list li {
 /*********************
   Media Query Classes
 **********************/
+
 @media only screen and (max-width: 600px) {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
 }
 
+/*
 @media only screen and (max-width: 992px) {
   .hide-on-med-and-down {
     display: none !important;
   }
 }
-
+*/
 @media only screen and (min-width: 601px) {
   .hide-on-med-and-up {
     display: none !important;
