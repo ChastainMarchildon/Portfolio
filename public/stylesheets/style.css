@@ -60,9 +60,9 @@ h1,h2,h3,h4{
   box-sizing: border-box;
 }
 #projectTabs{
-  background:#eaf2ff;
+  background:#a7b3c6;
   height:300px;
-  width:250px;
+  width:350px;
   padding:5px;
   border-radius: 2px;
 }
