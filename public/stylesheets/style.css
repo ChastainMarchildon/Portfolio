@@ -85,10 +85,17 @@ body{
 }
 
 .container{
-  max-width:1170px;
+  display:inline-block;
+  width:100% !important;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
+}
+
+.card{
+  width:20rem;
+  float:left;
+  margin:10px;
 }
 
 ul{
